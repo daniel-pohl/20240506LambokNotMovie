@@ -3,7 +3,7 @@ import java.util.List;
 
 public class UniversityService {
 
-    public static double calculateAverageGradeCourse(Course course) {
+    public double calculateAverageGradeCourse(Course course) {
         double totalGrade = 0;
 
         List<Student> students = course.getStudents();
