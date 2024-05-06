@@ -5,8 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Student s1 = new Student(1, "Daniel", "HG","3");
-        Student s2 = new Student(2, "John", "FFM","2");
+        Student s1 = new Student(1, "Daniel", "HG",3);
+        Student s2 = new Student(2, "John", "FFM",2);
         Student s3 = Student.builder()
                 .id(3)
                 .name("Marc")
@@ -33,5 +33,10 @@ public class Main {
 
         System.out.println(t1);
         System.out.println(c1);
+
+        System.out.println(UniversityService.calculateAverageGradeCourse(c1));
+
+        University myUniversity = new University(1, "My University", c1);
+        System.out.println(myUniversity);
     }
 }
